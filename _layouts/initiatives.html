@@ -15,7 +15,7 @@
     </div>
     <div>
         {% for initiative in site.initiatives %}
-            <a href="/{{ initiative.permalink }}">
+            <a href="{{ site.baseurl }}{{ initiative.url }}">
                 <h3>{{ initiative.title }}</h3>
             </a>
         {% cycle '', '', '</div><div>' %}
